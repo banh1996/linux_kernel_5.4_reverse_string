@@ -1,0 +1,8 @@
+Description: A project to communicate between kernel-space and user-space via Unix domain socket UDP. user-space read string line by line from a file and send to kernel, kernel send back reverse string.
+Work with linux kernel 5.4.0
+
+build: make all
+clean: make clean
+test: sudo ./call_kernel.sh test_string.txt
+
+note: Need sudo permission to insmod kernel module or run it with root privilege
